@@ -7,6 +7,34 @@
     <title>Odin: Library</title>
 </head>
 <body>
+    <div class="add">
+        <form id="newBookForm">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title">
+
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author">
+
+            <label for="pages">Pages</label>
+            <input type="number" name="pages" id="pages">
+
+            <label for="read">Read</label>
+            <input type="checkbox" name="read" id="read">
+            <button type="button" onclick="addBookToLibrary()">Add Book</button>
+        </form>
+    </div>
+    <div class="container">
+        <table class="table">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read</th>
+            </tr>
+        </table>
+    </div>
     
 </body>
 </html>
+
+<script src="./index.js"></script>
